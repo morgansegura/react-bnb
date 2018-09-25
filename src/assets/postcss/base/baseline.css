@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 
 body {
-  color: white;
+  color: $main-text-gray-color;
   padding: 0;
   margin: 0;
   font-family: $primaryFont;
@@ -59,11 +59,12 @@ p {}
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: white;
 }
 
 .main__content {
   flex-grow: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   @mixin atMedium {
     display: flex;
