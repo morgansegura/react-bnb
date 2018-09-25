@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $main-black-color;
+    padding: 1rem;
+
+    &__inner {
+
+    }
+    .copyright {
+        font-size: 14px;
+        text-align: right;
+    }
+}

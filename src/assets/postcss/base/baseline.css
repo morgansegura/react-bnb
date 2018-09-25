@@ -1,3 +1,104 @@
+* {box-sizing: border-box;}
+
 body {
-    background-color: lime;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: $primaryFont;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+  background-color: $main-white-color;
+}
+
+iframe {border: none;}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;  
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none; 
+}
+
+p, h1, h2, h3, h4, h5, h6 { 
+
+  margin: 0;   
+
+  &::before {
+    margin: 0; 
+  }
+  &::after {
+    margin: 0; 
+  }
+}
+
+p {}
+
+.primaryFont {
+  font-family: $primaryFont;
+}
+
+.secondaryFont {
+    /*font-family: $secondaryFont;*/
+}
+
+/* Body Structure */
+
+.wrapper {
+  position: relative;
+  z-index: 1;  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: white;
+}
+
+.main__content {
+  flex-grow: 1;
+
+  @mixin atMedium {
+    display: flex;
+    justify-content: space-between;    
+  }
+
+}
+
+.aside {
+
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  &--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @mixin atSmallest {
+    max-width: $atSmall;
+  }  
+  @mixin atSmall{
+    max-width: $atMedium;
+  }
+
+  @mixin atMedium {
+    max-width: $atLarge;
+  }
+
+  @mixin atLarge{
+    max-width: $atLargest;
+  }
+
 }

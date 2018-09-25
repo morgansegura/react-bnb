@@ -1,0 +1,30 @@
+.main-menu {
+    position: relative;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 64px; 
+    padding-left: 24px;
+    padding-right: 24px;
+
+    @mixin atSmallMedium {
+        min-height: 56px;
+        padding-left: 16px;
+        padding-right: 16px;        
+    }
+
+    &__nav {
+
+    }
+    &__logo {
+        font-family: $primaryFont;
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__item--right {
+
+    }
+}

@@ -1,0 +1,17 @@
+$atSmallest: 359px;
+$atSmall: 600px;
+$atMedium: 1024px;
+$atLarge: 1440px;
+$atLargest: 1920px;
+
+/* Colors */
+
+$main-color: #61dafb;
+$main-text-gray-color: #484848;
+$light-gray-color: #a9a9a9;
+$main-black-color: #20232a;
+$main-white-color: #ededed;
+
+/* Fonts */
+$primaryFont: 'Asap', sans-serif;
+/*$secondaryFont: 'Proza Libre', sans-serif;*/
