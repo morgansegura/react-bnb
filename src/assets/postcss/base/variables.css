@@ -1,8 +1,8 @@
-$atSmallest: 359px;
-$atSmall: 600px;
-$atMedium: 1024px;
-$atLarge: 1440px;
-$atLargest: 1920px;
+$atSmallest: 320px;
+$atSmall: 576px;
+$atMedium: 768px;
+$atLarge: 992px;
+$atLargest: 1200px;
 
 /* Colors */
 
@@ -11,6 +11,11 @@ $main-text-gray-color: #484848;
 $light-gray-color: #a9a9a9;
 $main-black-color: #20232a;
 $main-white-color: #ededed;
+
+$green-A7: #00C853;
+$blue-A4: #2979FF;
+$red-400: #FF1744;
+$red-700: #D50000;
 
 /* Fonts */
 $primaryFont: 'Asap', sans-serif;

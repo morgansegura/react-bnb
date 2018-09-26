@@ -61,24 +61,13 @@ p {}
   min-height: 100vh;
 }
 
-.main__content {
-  flex-grow: 1;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  @mixin atMedium {
-    display: flex;
-    justify-content: space-between;    
-  }
-
-}
 
 .aside {
 
 }
 
 .container {
-  position: relative;
+  /* position: relative;
   width: 100%;
   z-index: 1;
 
@@ -100,6 +89,99 @@ p {}
 
   @mixin atLarge{
     max-width: $atLargest;
-  }
+  } */
 
+}
+
+.buffer__inner {
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;     
+
+    @mixin atSmall {
+      padding-left: 24px;
+      padding-right: 24px;
+    }  
+
+  &--tb {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  &--lr {
+    padding-left: 16px;
+    padding-right: 16px; 
+
+    @mixin atSmall {
+      padding-left: 24px;
+      padding-right: 24px;
+    }        
+  }
+  &--t {
+    padding-top: 16px;
+  }
+  &--b {
+    padding-bottom: 16px;    
+  }
+  &--l {
+    padding-left: 16px;
+
+    @mixin atSmall {
+      padding-left: 24px;
+    }      
+  }
+  &--r {
+    padding-right: 16px;
+
+    @mixin atSmall {
+      padding-right: 24px;
+    }      
+  }
+}
+.buffer__outer{
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;     
+
+    @mixin atSmall {
+      margin-left: 24px;
+      margin-right: 24px;
+    }  
+
+  &--tb {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  &--lr {
+    margin-left: 16px;
+    margin-right: 16px; 
+
+    @mixin atSmall {
+      margin-left: 24px;
+      margin-right: 24px;
+    }        
+  }
+  &--t {
+    margin-top: 16px;
+  }
+  &--b {
+    margin-bottom: 16px;    
+  }
+  &--l {
+    margin-left: 16px;
+
+    @mixin atSmall {
+      margin-left: 24px;
+    }      
+  }
+  &--r {
+    margin-right: 16px;
+
+    @mixin atSmall {
+      margin-right: 24px;
+    }      
+  }
 }

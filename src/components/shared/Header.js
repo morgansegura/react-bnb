@@ -7,7 +7,7 @@ export const Header = () => {
             <div className="container">
                 <div className="main-menu">
                     <h2 className="main-menu__logo" variant="title" color="inherit">
-                        BNB React
+                        React BNB
                     </h2>
                     <Navigation />   
                 </div>          

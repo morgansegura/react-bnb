@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     nested = require('postcss-nested'),
     colorFunctions = require('postcss-color-function'),
     pixelsToRem = require('postcss-pixels-to-rem'),
+    //fallbackGradient = require('postcss-resemble-image'),
     cssnano = require('gulp-cssnano'),
     cssNext = require('postcss-preset-env');
 

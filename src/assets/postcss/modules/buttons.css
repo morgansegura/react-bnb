@@ -1,0 +1,21 @@
+.btn {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px; 
+    transition: all .3s ease-out;
+    font-weight: 600;
+
+    &--sm {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 5px 10px;
+    }
+    &--cta {
+        color: #fff;
+        background-color: $red-700;
+
+        &:hover {
+            background-color: $red-400;            
+        }
+    }
+}

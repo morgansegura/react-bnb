@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -35,8 +37,9 @@ class Navigation extends Component {
 
     render() {
 
-        const { classes } = this.props;
-        const { auth, anchorEl } = this.state;
+        //const { classes } = this.props;
+        //const { auth, anchorEl } = this.state;
+        const { anchorEl } = this.state;
         const open = Boolean(anchorEl);        
 
         return (
@@ -69,15 +72,19 @@ class Navigation extends Component {
                   onClose={this.handleClose}
                 >
 
+                    <MenuItem onClick={this.state.auth}>Profile</MenuItem>
+                    <MenuItem onClick={this.handleClose}>My account</MenuItem>
+                    
                     <MenuItem onClick={this.handleClose}>Register</MenuItem>
                     <MenuItem onClick={this.handleClose}>Login</MenuItem>
-                    <MenuItem onClick={this.handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={this.handleClose}>My account</MenuItem>
-
                 </Menu>                
             </nav>
         );
     }
 }
 
-export default Navigation;
+Navigation.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Navigation)
