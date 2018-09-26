@@ -1,8 +1,6 @@
 import React from 'react';
 
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 
 
 const ItemCard = (props) => {
@@ -10,7 +8,7 @@ const ItemCard = (props) => {
     return (
         <div className="col-12 col-md-6 col-lg-4">
             <div className={props.classes}>
-                <CardActionArea className="card__body">
+                <div className="card__body">
                     <CardMedia
                         component="img"
                         image={props.image}
@@ -24,11 +22,11 @@ const ItemCard = (props) => {
                         </p>
                     </div>
                     <div className="card__footer">
-                        <Button size="small" color="primary">
+                        <a href="/" className="btn btn--sm btn--more">
                             More Info
-                        </Button>
+                        </a>
                     </div>                    
-                </CardActionArea>
+                </div>
             </div>
         </div>            
     );

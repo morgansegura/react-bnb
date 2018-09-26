@@ -14,8 +14,8 @@ class App extends Component {
     return (
       <div className="wrapper">
         <Header />
-        <main className="container content">
-          <h1 className="title">Your Home All Around the World</h1>
+        <main className="container">
+          <h1 className="content__title">Your Home All Around the World</h1>
           <Rentals />
         </main>
         <Footer />

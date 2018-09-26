@@ -10,7 +10,25 @@
         margin-bottom: 1rem;
         padding: 5px 10px;
     }
+    &--md {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 5px 10px;
+    }
+    &--lg {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 5px 10px;
+    }
     &--cta {
+        color: google-color(contrast red, A700);
+        background-color: google-color(red, A700);
+
+        &:hover {
+            background-color: $red-400;            
+        }
+    }
+    &--blue {
         color: #fff;
         background-color: $red-700;
 
