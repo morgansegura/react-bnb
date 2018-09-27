@@ -44,6 +44,7 @@ class Navigation extends Component {
 
         return (
             <nav className="nav">
+ 
                 <IconButton 
                     className="main-menu__icon" 
                     color="inherit" 
@@ -54,7 +55,7 @@ class Navigation extends Component {
                 >
                     <AccountCircle />
                 </IconButton>                  
-                <IconButton className="main-menu__icon" color="inherit" aria-label="Menu" >
+                <IconButton className="main-menu__icon icon__more" color="inherit" aria-label="Menu" >
                     <MoreIcon />
                 </IconButton>
                 <Menu

@@ -21,19 +21,21 @@
         padding: 5px 10px;
     }
     &--cta {
-        color: google-color(contrast red, A700);
-        background-color: google-color(red, A700);
+        color: google-color(contrast red, 700);
+        background-color: google-color(red, 700);
 
         &:hover {
-            background-color: $red-400;            
+            color: google-color(contrast red, 400);
+            background-color: google-color(red, 400);       
         }
     }
     &--blue {
-        color: #fff;
-        background-color: $red-700;
+            background-color: google-color(blue, 700);            
+            color: google-color(contrast blue, 700);   
 
         &:hover {
-            background-color: $red-400;            
+            background-color: google-color(blue, 400);            
+            color: google-color(contrast blue, 400);            
         }
     }
 }

@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { BrowserRouter, Route, Redirect } from 'react-router-dom'
+
+
+import RentalList from './components/rental/rental-listing/RentalListing'
+import RentalDetail from './components/rental/rental-detail/RentalDetail'
 
 
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -7,19 +12,27 @@ import './assets/css/styles.css'
 
 import { Header } from './components/shared/Header'
 import Footer from './components/shared/Footer'
-import Rentals from './components/rentals'
+
+const store = require('./reducers').init()
 
 class App extends Component {
+
   render() {
+
     return (
-      <div className="wrapper">
-        <Header />
-        <main className="container">
-          <h1 className="content__title">Your Home All Around the World</h1>
-          <Rentals />
-        </main>
-        <Footer />
-      </div>
+      <Provider store={store}>
+        <BrowserRouter>
+            <div className="wrapper">
+              <Header />
+              <main className="content container">
+                  <Route exact path="/" render={() => { return <Redirect to='/rentals' />}} />
+                  <Route exact path="/rentals" component={RentalList} />
+                  <Route exact path="/rentals/:id" component={RentalDetail} />
+              </main>
+              <Footer />
+            </div>
+        </BrowserRouter>
+      </Provider>
     )
   }
 }

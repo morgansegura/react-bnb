@@ -19,6 +19,10 @@
         .card__body > img {
             opacity: .8;
         }
+        .btn--more {
+            background-color: google-color(blue, 500);
+            color: google-color(contrast blue, 700);
+        }        
     }
  
     &__wrapper {
@@ -58,11 +62,7 @@
             font-weight: 400;
             line-height: 1.46429em;
             color: $light-gray-color;
-        }
-        &--green {
-            text-transform: uppercase;
-            color: $green-A7;
-        }      
+        } 
     }
     &__footer {
         padding: .5rem 1rem 1rem 1rem;
@@ -71,12 +71,7 @@
     .btn--more {
         color: google-color(contrast blue, 700);
         background: google-color(blue, 300);
-        border: 1px solid #efefef;
-
-        &:hover {
-            background-color: $red-400;
-            border: 1px solid #efefef;
-        }
+        border-color: white;
     }
 
 }

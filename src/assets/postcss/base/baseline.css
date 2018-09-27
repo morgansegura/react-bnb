@@ -51,6 +51,18 @@ p {}
     /*font-family: $secondaryFont;*/
 }
 
+a {
+    color: google-color(blue, 300);
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    transition: color .3s ease-out;
+    
+    &:hover {
+      color: google-color(blue, 500);
+    }
+}
+
 /* Body Structure */
 
 .wrapper {
@@ -139,7 +151,7 @@ p {}
     }      
   }
 }
-.buffer__outer{
+.buffer__outer {
 
     margin-top: 16px;
     margin-bottom: 16px;
@@ -185,3 +197,4 @@ p {}
     }      
   }
 }
+

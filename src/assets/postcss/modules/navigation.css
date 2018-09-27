@@ -16,6 +16,11 @@
         font-family: $primaryFont;
         color: google-color(lightblue, 300);
     }
+    .icon {
+        &__more {
+           
+        }
+    }
 }
 .nav {
     display: flex;

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import Navigation from './Navigation'
 
 export const Header = () => {
@@ -7,7 +9,7 @@ export const Header = () => {
             <div className="container">
                 <div className="main-menu">
                     <h2 className="main-menu__logo" variant="title" color="inherit">
-                        React BNB
+                        <Link to="/">React BNB</Link>
                     </h2>
                     <Navigation />   
                 </div>          
