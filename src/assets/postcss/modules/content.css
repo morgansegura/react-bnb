@@ -1,13 +1,20 @@
 .content {
     flex-grow: 1;
     overflow: hidden;
-    padding: 1rem;
+    padding: 2.5rem 1rem;
     
     &__title {
-        font-size: 40px;
+        font-size: 2rem;  
         line-height: 48px;
-        padding-top: 1rem;
         color: $main-black-color;
+
+        @mixin atSmall {
+            font-size: 2.25rem;     
+        }
+        @mixin atMedium {
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
     }
 
     &__with-aside {

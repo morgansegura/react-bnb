@@ -3,17 +3,13 @@ import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Redirect } from 'react-router-dom'
 
 
-import RentalList from './components/rental/rental-listing/RentalListing'
-import RentalDetail from './components/rental/rental-detail/RentalDetail'
+import RentalList from 'components/rental/rental-listing/RentalListing'
+import RentalDetail from 'components/rental/rental-detail/RentalDetail'
 
+import { Header } from 'components/shared/Header'
+import Footer from 'components/shared/Footer'
 
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import './assets/css/styles.css'
-
-import { Header } from './components/shared/Header'
-import Footer from './components/shared/Footer'
-
-const store = require('./reducers').init()
+const store = require('reducers').init()
 
 class App extends Component {
 

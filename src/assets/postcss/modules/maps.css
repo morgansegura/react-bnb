@@ -1,0 +1,37 @@
+.google-map {
+    min-height: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px #ddd;
+
+    .info-window {
+        position: relative;
+        width: 300px;
+        font-size: 14px;
+        font-family: $primaryFont;
+
+        &__inner {
+            padding-left: 20px
+        }
+
+        &__error {
+            font-size: 13px;
+            color: #888;
+        }
+        &__contact {
+            text-align: center;
+            font-size: 13px;
+            padding: .5rem;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+            color: google-color(amber, 800);
+            border: 1px solid google-color(amber, 500);            
+            border-radius: 3px;
+        }
+        &__apology, &__error span {
+            text-align: center;
+            font-size: 15px;
+            color: google-color(blue, 300);
+            font-weight: 600;
+        }
+    }
+}

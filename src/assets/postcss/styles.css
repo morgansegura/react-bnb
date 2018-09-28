@@ -1,20 +1,19 @@
-
-@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700');
-
 /* Vendors */
-@import './vendors/bootstrap-reboot.min.css';
-@import './vendors/bootstrap-grid.min.css';
+@import 'vendors/bootstrap-reboot.min.css';
+@import 'vendors/bootstrap-grid.min.css';
 
 /* Base */
-@import './base/variables';
-@import './base/utilities';
-@import './base/baseline';
-@import './base/typography';
+@import 'base/variables';
+@import 'base/utilities';
+@import 'base/baseline';
+@import 'base/typography';
 
 /* Modules */
-@import './modules/buttons';
-@import './modules/header';
-@import './modules/navigation';
-@import './modules/footer';
-@import './modules/content';
-@import './modules/card';
+@import 'modules/buttons';
+@import 'modules/header';
+@import 'modules/navigation';
+@import 'modules/footer';
+@import 'modules/content';
+@import 'modules/rental';
+@import 'modules/card';
+@import 'modules/maps';

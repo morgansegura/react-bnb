@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RentalCard from './RentalCard';
-//import * as actions from '../../../actions'
+//import * as actions from 'actions'
 
 class RentalList extends Component {
 
