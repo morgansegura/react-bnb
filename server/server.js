@@ -12,8 +12,9 @@ const Rental = require('./models/rental')
 const User = require('./models/user')
 
 // Include Routes
-const rentalRoutes = require('./routes/rentals')
-const userRoutes = require('./routes/users')
+const rentalRoutes = require('./routes/rentals'),
+      userRoutes = require('./routes/users'),
+      bookingRoutes = require('./routes/bookings')
 
 // Middleware
 app.use(bodyParser.urlencoded({extended:true}))
@@ -30,6 +31,7 @@ mongoose.connect(process.env.DATABASE).then(() => {
 // Server routes
 app.use('/api/v1/rentals', rentalRoutes)
 app.use('/api/v1/users', userRoutes)
+app.use('/api/v1/bookings', bookingRoutes)
 
 
 // Give us a server
