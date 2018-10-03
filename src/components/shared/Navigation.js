@@ -6,6 +6,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import { Link } from 'react-router-dom'
 //import Button from '@material-ui/core/Button';
 
 const styles = {
@@ -35,7 +36,7 @@ class Navigation extends Component {
         this.setState({ anchorEl: null });
     }; 
 
-    render() {
+    render(props) {
 
         //const { classes } = this.props;
         //const { auth, anchorEl } = this.state;
@@ -75,9 +76,17 @@ class Navigation extends Component {
 
                     <MenuItem onClick={this.state.auth}>Profile</MenuItem>
                     <MenuItem onClick={this.handleClose}>My account</MenuItem>
-                    
-                    <MenuItem onClick={this.handleClose}>Register</MenuItem>
-                    <MenuItem onClick={this.handleClose}>Login</MenuItem>
+
+                    <MenuItem onClick={this.handleClose}>
+                        <Link to="/register">Register</Link>
+                    </MenuItem>
+
+                    <MenuItem onClick={this.handleClose}>
+                        <Link to="/register">Register</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <p onClick={props.logout}>Logout</p>
+                    </MenuItem>
                 </Menu>                
             </nav>
         );

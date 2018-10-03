@@ -21,8 +21,8 @@
         padding: 5px 10px;
     }
     &--cta {
-        color: google-color(contrast red, 700);
-        background-color: google-color(red, 700);
+        color: google-color(contrast red, 400);
+        background-color: google-color(red, 400);
 
         &:hover {
             color: google-color(contrast red, 400);

@@ -8,9 +8,10 @@ import * as actions from 'actions'
 class RentalDetail extends Component {
     
     componentWillMount() {
+        // Dispatch action
+        const rentalId = this.props.match.params.id;
 
-        const rentalId = this.props.match.params.id
-        this.props.dispatch(actions.fetchRentalById(rentalId))
+        this.props.dispatch(actions.fetchRentalById(rentalId));
     }
 
     render() {
@@ -45,7 +46,8 @@ class RentalDetail extends Component {
 const mapStateToProps = (state) => {
     //console.log(state.rental.data);
     return {
-        rental: state.rental.data
+        rental: state.rental.data,
+        errors: state.rental.errors
     }
 }
 

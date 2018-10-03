@@ -26,7 +26,32 @@
     display: flex;
     justify-content: space-between;
 
-    &__item--right {
+    &__item {
+        cursor: pointer;
+        margin-left: 1rem;
+        text-decoration: none;
+        background-color: transparent;
+        transition: color .3s ease-out;
 
+        .nav--dark & {
+            color: google-color(gray, 50);
+        
+            &:hover {
+                color: google-color(white);
+            }                
+        }
+        .nav--light & {
+            color: google-color(blue, 300);
+
+            &:hover {
+                color: google-color(blue, 500);
+            }                
+        }
     }
+    &--dark > .nav__item.active{
+        color: google-color(white);
+    }    
+    &--light > .nav__item.active {
+        color: google-color(blue, 500);
+    }        
 }

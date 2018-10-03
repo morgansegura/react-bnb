@@ -1,6 +1,7 @@
 /* Vendors */
-@import 'vendors/bootstrap-reboot.min.css';
-@import 'vendors/bootstrap-grid.min.css';
+/* @import 'vendors/bootstrap-reboot.min.css';
+@import 'vendors/bootstrap-grid.min.css'; */
+@import 'vendors/bootstrap.min.css';
 
 /* Base */
 @import 'base/variables';
@@ -10,6 +11,7 @@
 
 /* Modules */
 @import 'modules/buttons';
+@import 'modules/misc';
 @import 'modules/header';
 @import 'modules/navigation';
 @import 'modules/footer';
@@ -17,3 +19,4 @@
 @import 'modules/rental';
 @import 'modules/card';
 @import 'modules/maps';
+@import 'modules/forms';
