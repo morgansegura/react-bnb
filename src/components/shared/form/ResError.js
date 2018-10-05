@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ResError = (props) => {
     const errors = props.errors
-
+    console.log(props)
     return (
         errors.length > 0 &&
         <div className="alert alert-danger res-errors">

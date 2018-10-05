@@ -1,6 +1,6 @@
 import axios from 'axios'
-import authService from 'services/authService'
-import axiosService from 'services/axiosService'
+import authService from 'services/auth-service'
+import axiosService from 'services/axios-service'
 
 
 import {
@@ -109,4 +109,10 @@ export const logout = () => {
         type: LOGOUT,
 
     }
+}
+
+export const createBooking = (booking) => {
+    return axiosInstance.post('/api/v1/bookings', booking)
+        .then(res => res.data)
+        .catch(({ response }) => Promise.reject(response.data.errors))
 }

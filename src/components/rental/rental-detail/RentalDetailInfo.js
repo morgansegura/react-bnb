@@ -28,21 +28,7 @@ const RentalDetailInfo = (props) => {
                     {rental.description}
                 </p>
             </div>
-
-            <hr className="solid--light" />
-
-            <RentalAssets />
-
-            <hr className="solid--light" />
-
-            <p>id: {rental._id}</p>
-
-            <p>street: {rental.street}</p>
-
-            <p>createdAt: {rental.createdAt}</p>
-            <p>dailyRate: {rental.dailyRate}</p>
-
-            <p>shared: {rental.shared ? 'true' : 'false'}</p>            
+            <RentalAssets />        
         </div>
     );
 };

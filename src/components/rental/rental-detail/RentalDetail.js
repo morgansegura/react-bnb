@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import RentalDetailInfo from './RentalDetailInfo'
 import RentalMap from './RentalMap'
+import Booking from 'components/booking/Booking';
 
 import * as actions from 'actions'
 
@@ -19,7 +20,7 @@ class RentalDetail extends Component {
 
         if (rental._id) {
             return (
-                <div className="rental__detail">
+                <section className="rental__detail">
                     <div className="row">
                         <div className="col-12 col-md-6">
                             <div className="rental__detail__image">
@@ -30,10 +31,18 @@ class RentalDetail extends Component {
                             <RentalMap location={`${rental.city}, ${rental.street}`} />
                         </div>
                     </div>
+                    <div className="details-section">
+                        <div className="row">
+                            <div className="col-md-8">
+                                <RentalDetailInfo rental={rental} />
+                            </div>
+                            <div className="col-md-4">
+                                <Booking rental={rental} />
+                            </div>
+                        </div>
+                    </div>
 
-                    <RentalDetailInfo rental={rental} />
-
-                </div>
+                </section>
             )
         } else {
             return (

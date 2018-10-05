@@ -2,6 +2,8 @@
 /* @import 'vendors/bootstrap-reboot.min.css';
 @import 'vendors/bootstrap-grid.min.css'; */
 @import 'vendors/bootstrap.min.css';
+@import 'vendors/bootstrap-daterangepicker.css';
+@import 'vendors/ReactToastify.min.css';
 
 /* Base */
 @import 'base/variables';
@@ -20,3 +22,4 @@
 @import 'modules/card';
 @import 'modules/maps';
 @import 'modules/forms';
+@import 'modules/booking';
