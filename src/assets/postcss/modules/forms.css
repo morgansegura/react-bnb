@@ -1,1 +1,8 @@
-.form {}
+.form {
+
+    .btn--cta {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: 1rem;
+    }
+}

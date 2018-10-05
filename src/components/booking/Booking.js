@@ -132,7 +132,7 @@ class Booking extends Component {
         const { startAt, endAt, guests } = this.state.proposedBooking
 
         return (
-            <div className="booking">
+            <div className="booking form">
                 <ToastContainer />
                 <h3 className="booking__price"> $ {rental.dailyRate} <span className="booking__per-night">per night</span></h3>
                 <hr className="solid--light" />
